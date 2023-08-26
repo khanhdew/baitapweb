@@ -69,27 +69,43 @@
         margin-top: -20px;
     }
 
-    .table2{
-        margin-top: 25px;
+    table.table1{
+        border: 1px solid #cccccc;
+        border-collapse: collapse;
+        margin-bottom: 35px;
+        width: auto;
+    }
+    
+    table.table1 tr td {
+        border-left: none;
+        border-right: none;
+
     }
 
-    table,
-    th,
-    td {
+    table.table2{
         border: 1px solid #cccccc;
         border-collapse: collapse;
         padding: 5px;
         width: 650px;
         margin-bottom: auto;
     }
-    tr:not(:first-child) {
+
+    table,
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #cccccc;
+    }
+
+    table.table1 tr:not(:first-child) {
         background-color: #f0f0f0;
         border-left: none;
     }
-    tr td{
-        border-left: none;
-        border-right: none;
+
+    table.table2 tr:not(:first-child) {
+        background-color: #f0f0f0;
     }
+    
     footer{
         clear: both;
         margin-top: 25px;
@@ -155,7 +171,7 @@
             <p>Welcome to our sample web page. We'll be disecting this page piece by piece to show you the best ways to use
                 HTML, CSS and Javascript</p>
         </div>
-        <table>
+        <table class="table1">
             <tr>
                 <td colspan="2">
                     <h4 style="margin: 5px 5px;">Create a Profile</h4>
