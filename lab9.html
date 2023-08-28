@@ -9,13 +9,14 @@
 <style>
     html {
         background-color: rgb(216, 209, 144);
+        justify-content: center;
     }
     body{
         max-width: 960px;
         max-height: max-content;
-        display: flexbox;
-        justify-content: center;
-        align-items: center;
+        border: 1px ridge black;
+        border-radius: 5px;
+        padding: 15px;
     }
     header{
         display: flex;
@@ -62,17 +63,15 @@
     .contentOnImg {
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
-        display: flex;
         width: 100%;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
+        position: relative;
+        bottom:0%;
     }
 
     div.contentOnImg>p {
         color: white;
         font-family: 'Courier New', Courier, fantasy;
+        text-align: left;
         margin: 10px;
         float: left;
     }
@@ -81,6 +80,8 @@
         background-color: brown;
         border-color: rgb(0, 0, 0);
         border-radius: 5px;
+        align-content: center;
+        align-items: flex-end;
         color: white;
         font-weight: bold;
     }
@@ -163,7 +164,7 @@
     <hr>
     <div class="reviewImg">
         <div class="contentOnImg">
-            <p style="margin-right: 360px;">Reflections on my holiday in the United States...</p>
+            <p>Reflections on my holiday in the United States...</p>
             <button>See article &#9658; </button>
         </div>
     </div>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th ,td{
+        border: 2px solid;
+        border-style: ridge;
+    }
+    input{
+        border: 2px solid;
+        border-style: inset;
+    }
+    #details{
+        height: 50px;
+    }
+</style>
+<body>
+    <table>
+        <tr style="background-color: aqua;">
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td><form action="">
+                <input type="radio" id="male" name="sex" value="Male">
+                  <label for="male">Male</label><br>
+                <input type="radio" id="female" name="sex" value="Female">
+                  <label for="female">CSS</label><br>
+            </form></td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td><select name="ecolor" id="ecolor">
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="black">black</option>
+                <option value="brown">brown</option>
+            </select></td>
+            
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td><form action="">
+                <input type="checkbox" id="tall" name="detail" value="Over 6 ft tall">
+                <label for="tall">Over 6 feet tall</label>
+                <br>
+                <input type="checkbox" id="weight" name="detail" value="Over 200 pounds">
+                <label for="weight">Over 200 pounds</label>
+            </form></td>
+        </tr>
+        <tr>
+            <td colspan="2">Describe your athletic ability:</td>
+        </tr>
+        <tr>
+           <td colspan="2"><input type="text" id="details" size="38.4" height="50px" ></td> 
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="Enter my infor"></td>
+
+        </tr>
+    </table>
+</body>
+</html>
