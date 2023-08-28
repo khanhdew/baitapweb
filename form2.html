@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div.form label::before {
+        content: "*";
+        color: red;
+        margin-right: 10px;
+    }
+
+    table tr td {
+        padding: 5px;
+    }
+
+    table tr td:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+    input[type="submit"]{
+        margin: 10px;
+        width: 100px;
+    }
+</style>
+
+<body>
+    <div>
+        <form style="text-align: center;">
+            <label for="boGo">Bộ gõ Tiếng Việt</label>
+            <input type="radio" name="boGo" id="off">
+            <label for="off">Off</label>
+            <input type="radio" name="boGo" id="telext">
+            <label for="telext">Telext</label>
+            <input type="radio" name="boGo" id="vni">
+            <label for="vni">VNI</label>
+            <input type="radio" name="boGo" id="viqr">
+            <label for="viqr">VIQR</label>
+        </form>
+        <hr>
+        <div class="form" style="margin: 20px;">
+            <label for="chonKhuVuc">Chọn khu vực sinh sống: </label>
+            <select name="chonKhuVuc" id="chonKhuVuc">
+                <option value="1">--Chọn khu vực sinh sống--</option>
+                <option value="2">Khu vực 2</option>
+                <option value="3">Khu vực 3</option>
+                <option value="4">Khu vực 4</option>
+            </select>
+        </div>
+        <div class="form">
+            <table>
+                <tr>
+                    <td><label for="userName">Tên truy cập: </label></td>
+                    <td><input type="text" id="userName" placeholder="Tên truy cập"></td>
+                </tr>
+                <tr>
+                    <td><label for="passWord">Mật khẩu: </label></td>
+                    <td><input type="password" id="passWord"></td>
+                </tr>
+                <tr>
+                    <td><label for="rePassWord">Xác nhận mật khẩu: </label></td>
+                    <td><input type="password" id="rePassWord"></td>
+                </tr>
+                <tr>
+                    <td><label for="hoTen">Tên đầy đủ: </label></td>
+                    <td><input type="text" id="hoTen" placeholder="Nhập họ tên đầy đủ"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" id="email" placeholder="Email của bạn"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Mobile: </label></td>
+                    <td><input type="tel" id="phone" placeholder="Số điện thoại"></td>
+                </tr>
+                <tr>
+                    <td>Số ĐT khác: </td>
+                    <td><input type="tel" id="anotherPhone"></td>
+                </tr>
+                <tr>
+                    <td>Website: </td>
+                    <td><input type="url" id="website"></td>
+                </tr>
+                <tr>
+                    <td><label for="addressInput">Địa chỉ: </label></td>
+                    <td><input type="text" id="addressInput" placeholder="Địa chỉ"></td>
+                </tr>
+                <tr>
+                    <td>Mã số bảo vệ: </td>
+                    <td><input type="text" id="maSoBaoVe" placeholder="Nhập mã an toàn"><img src="" alt="12312312">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <p style="color: red;">(Chú ý: Phân biệt chữ hoa, chữ thường và không có dấu cách)</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2"><input type="checkbox" id="agree">Tôi đồng ý với <a href="">Quy định đăng
+                            ký</a> và <a href="">Quy chế thành viên</a> của www.mubanoto.vn</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Đăng ký"><input type="submit" value="Làm lại"></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</body>
+
+</html>

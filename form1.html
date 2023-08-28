@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
+<style>
+    .text-center {
+        text-align: center;
+    }
+    input{
+        width: 100%;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid black;
+    } 
+    li{
+        font-weight: bold;
+    }
+    span{
+        color: red;
+        
+    }
+    table{
+        min-width: 800px;
+    }
+    td{
+        padding: 3px;
+    }
+</style>
 <body>
-    <div>
+    <div class="text-center">
         <p>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</p>
         <h4>Độc lập - Tự do - Hạnh Phúc</h4>
         <p>---------------------</p>
@@ -43,21 +66,58 @@
                     <td><input type="date" id="date" name="date"></td>
                 </tr>
                 <tr>
-                    <td>Cơ quan cấp phép:</td>
+                    <td colspan="4"><label for="coQuan">Cơ quan cấp phép:</label></td>
                 </tr>
                 <tr>
                     <td></td>
-                    <td colspan="3"><input type="text" name="" id=""></td>
+                    <td colspan="3"><input type="text" name="coQuan" id="coQuan"></td>
                 </tr>
                 <tr>
                     <td><label for="dkkd">Số ĐKKD</label></td>
                     <td><input type="text" id="dkkd" name="dkkd"></td>
-                    <td></td>
-                    <td></td>
                 </tr>
             </table>
             <li>Người chịu trách nhiệm xuất bản bản tin:<span>(*)</span></li>
-            
+            <table>
+                <tr>
+                    <td><label for="name">Họ và tên:<span>(*)</span></label></td>
+                    <td colspan="3"><input type="text" id="name" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="birthDate">Sinh ngày:<span>(*)</span></label></td>
+                    <td><input type="date" id="birthDate" name="birthDate"></td>
+                    <td><label for="nationality">Quốc tịch:<span>(*)</span></label></td>
+                    <td>
+                        <select name="nationality" id="nationality">
+                            <option value="vietnam">Việt Nam</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="position">Chức danh:<span>(*)</span></label></td>
+                    <td colspan="3"><input type="text" id="position" name="position"></td>
+                </tr>
+                <tr>
+                    <td><label for="soChungThuc">Số chứng thực:<span>(*)</span></label></td>
+                    <td><input type="text" id="soChungThuc" name="soChungThuc"></td>
+                    <td><label for="noiCap">Nơi cấp:<span>(*)</span></label></td>
+                    <td><input type="text" id="noiCap" name="noiCap"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="contactAddress">Địa chỉ liên lạc:<span>(*)</span></label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3"><input type="text" id="contactAddress" name="contactAddress"></td>
+                </tr>
+                <tr>
+                    <td colspan="4"><label for="trinhDo">Trình độ chuyên môn, nghiệp vụ:</label></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="3"><input type="text" id="trinhDo" name="trinhDo"></td>
+                </tr>
+            </table>
         </ol>
     </div>
 </body>

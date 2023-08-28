@@ -64,8 +64,10 @@
         background-color: rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         width: 100%;
-        position: relative;
-        bottom:0%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     div.contentOnImg>p {
@@ -81,7 +83,7 @@
         border-color: rgb(0, 0, 0);
         border-radius: 5px;
         align-content: center;
-        align-items: flex-end;
+        align-items: center;
         color: white;
         font-weight: bold;
     }
@@ -165,7 +167,7 @@
     <div class="reviewImg">
         <div class="contentOnImg">
             <p>Reflections on my holiday in the United States...</p>
-            <button>See article &#9658; </button>
+            <button style="margin-left: auto;">See article &#9658; </button>
         </div>
     </div>
     <section>
