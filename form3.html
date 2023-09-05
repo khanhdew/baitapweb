@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        width: 550px;
+        background-color: rgb(216, 216, 216);
+    }
+    tr,td{
+        padding: 5px;
+        margin: 10px;
+    }
+    td:first-child{
+        width: 100px;
+    }
+    td:nth-child(2)::before{
+        content: "*";
+        color: red;
+        padding-right: 5px;
+    }
+    .note{
+        font-size: 12px;
+        color: rgb(118, 150, 255);
+    }
+    tr.note td:first-child::after{
+        content: none;
+    }
+</style>
+<body>
+    <table>
+        <tr>
+            <td colspan="2" style="background-color: red;color: white;font-weight: bold;" >1.Chi tiết cá nhân</td>
+        </tr>
+        <tr>
+            <td>Tên</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Họ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr class="note">
+            <td></td>
+            <td>Tên phải khớp với tên trong tài khoản ngân hàng của bạn để gửi và rút tiền</td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td>
+                <input type="radio" name="gender" id="male" >
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="female" >
+                <label for="female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ email</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Xác nhận địa chỉ email</td>
+            <td><input type="text" ></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh </td>
+            <td>
+                <select name="" id="">
+                    <option value="">Tháng 5</option>
+                </select>
+                <input type="text">,
+                <select name="" id="">
+                    <option value="">1981</option>
+                </select>
+            </td>
+        </tr>
+        <tr class="note">
+            <td></td>
+            <td >(ví dụ, 12 tháng 1 năm 1970)</td>
+        </tr>
+        <tr>
+            <td>Quốc gia</td>
+            <td>
+                <select name="" id="" style="width: 400px;">
+                    <option value="" w>Việt Nam</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Phường/Thị Xã/Quận huyện</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Thành phố/Tỉnh</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Mã zip</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Di động</td>
+            <td><input type="text"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
