@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+        margin: 0 auto;
+        width: 500px;
+        padding-top: 20px;
+    }
+
+    legend{
+        color: white;
+        background-color: orange;
+        border: 1px solid black;
+    }
+    form {
+        margin: 0 auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    input {
+        background-color: rgb(255, 215, 139);
+    }
+
+    select {
+        background-color: rgb(255, 215, 139);
+    }
+
+    textarea {
+        background-color: rgb(255, 215, 139);
+    }
+    
+    tr td{
+        padding: 5px;
+    }
+
+    tr td:first-child{
+        text-align: right;
+    }
+    tr td:last-child{
+        text-align: left;
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>This is my form</legend>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label for="email">Email: </label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="confirm_password">Confirm Password: </label></td>
+                    <td><input type="password" name="confirm_password" id="confirm_password"></td>
+                </tr>
+                <tr>
+                    <td><label for="upLoad">Upload Your Picture: </label></td>
+                    <td><input type="file" name="upLoad" id="upLoad"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender: </label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Select Country: </label></td>
+                    <td>
+                        <select name="country" id="country">
+                            <option value="vietnam">Vietnam</option>
+                            <option value="japan">Japan</option>
+                            <option value="korea">Korea</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="hobby">Hobby: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobby" id="cricket">
+                        <label for="cricket">Cricket</label>
+                        <input type="checkbox" name="hobby" id="football">
+                        <label for="football">Football</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label>
+                    </td>
+                    <td>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+
+</html>
