@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+
+    }
+
+    form {
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    input[type="text"] {
+        width: 250px;
+    }
+    input{
+        border-color: #e2e2e2;
+        border-style: solid;
+    }
+    tr td:first-child{
+        padding-right: 100px;
+    }
+</style>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td></td>
+                <td style="font-weight: bold;">Student Registration Form</td>
+            </tr>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="fatherName">Father Name</label></td>
+                <td><input type="text" id="fatherName"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">DOB</label></td>
+                <td><input type="text" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Sex</label></td>
+                <td>
+                    <select name="sex" id="sex">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailId">EmailId</label></td>
+                <td><input type="text" id="emailId"></td>
+            </tr>
+            <tr>
+                <td><label for="course">Course</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="--select--">select...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Permanent Address</label></td>
+                <td><input type="text" id="address"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="--select--">select...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="district">District</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="--select--">select...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="state">State</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="--select--">select...</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pincode">Pincode</label></td>
+                <td><input type="text" id="pincode"></td>
+            </tr>
+            <tr>
+                <td><label for="mobile">Mobileno</label></td>
+                <td><input type="text" id="mobile"></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Reset"></td>
+                <td><input type="submit" value="Submit Form"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
